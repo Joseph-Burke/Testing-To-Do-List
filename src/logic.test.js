@@ -1,5 +1,3 @@
-// Test constructors?
-
 import { Project, Task } from "./logic";
 
 describe("Project constructor", () => {
@@ -32,12 +30,7 @@ describe("Project constructor", () => {
 });
 
 describe("Task constructor", () => {
-  const testTask = new Task(
-    "TESTNAME", 
-    "TESTDESC", 
-    "TESTDATE", 
-    "TESTPRIO"
-    );
+  const testTask = new Task("TESTNAME", "TESTDESC", "TESTDATE", "TESTPRIO");
 
   test("Task constructs a new task object", () => {
     expect(testTask instanceof Task).toBeTruthy();
