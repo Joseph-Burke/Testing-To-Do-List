@@ -2,8 +2,14 @@
 
 // How can we test createContent?
 
-import { createContent } from './helpers'
+import { updateLocalStorage } from './helpers'
 
-test("1 plus 1 is 2", () => {
-  expect(1 + 1).toBe(2);
+test("update local storage array", () => {
+
+  const infoArray = [["key", "value"]];
+  updateLocalStorage(infoArray);
+  const savedValue = localStorage.getItem('key');
+
+  expect(savedValue).toBe('value');
 });
+
