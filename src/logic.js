@@ -3,7 +3,6 @@ export function Task(title, description, dueDate, priority) {
   this.description = description;
   this.dueDate = dueDate;
   this.priority = priority;
-  this.complete = false;
 }
 
 export function Project(title, description, dueDate) {

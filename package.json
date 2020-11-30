@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack --mode production",
     "build-watch": "webpack --watch --mode production",
     "dev": "webpack --mode development",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/epinczinger/to-do-list#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.0.1",
     "eslint": "^6.8.0",
